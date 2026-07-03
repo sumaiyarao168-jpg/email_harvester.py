@@ -1,43 +1,6 @@
 # email_harvester.py
 # Email Harvester (Day 2 — RECON & OSINT)
 
-An ethical OSINT (Open-Source Intelligence) Python script designed to scrape email addresses from a target website using regular expressions (regex). This project is part of the Week 1 (Recon & OSINT) cyber security learning journey as shown in `Screenshot_20260629-163041.jpg`.
-
-## 📌 Objective
-The goal of this script is to understand how attackers collect public-facing email addresses from web sources for target profiling and building pretexting frameworks in social engineering campaigns.
-
-> ⚠️ **Disclaimer / Ethics Boundary:** This tool is strictly for educational purposes and authorized penetration testing. Only target domains/websites that you own or have explicit written permission to test.
-
----
-
-## 🛠️ Features
-* Fetches HTML content from a specified URL securely with a timeout limit.
-* Uses targeted Regular Expressions (Regex) to extract email addresses.
-* Filters out duplicates automatically using Python `sets`.
-
----
-
-## 🚀 How It Works
-The script sends an HTTP `GET` request to the target domain, retrieves the raw HTML structure, and parses it via a regular expression to match standard email structures:
-`[\w.+-]+@[\w-]+\.[a-zA-Z]{2,}`
-
----
-
-## 📋 Prerequisites & Installation
-
-### 1. Requirements
-This script utilizes Python 3 standard libraries, along with the `requests` library for handling HTTP interactions.
-
-### 2. Setup
-Clone this repository and install the required dependency:
-
-```bash
-# Clone the repository
-git clone [https://github.com/your-username/email-harvester.git](https://github.com/your-username/email-harvester.git)
-cd email-harvester
-
-# Install required packages
-pip install requests
 📧 Email Harvester
 
 <p align="center">
